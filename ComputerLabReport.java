@@ -43,7 +43,10 @@ public class ComputerLabReport {
         System.out.println();
 
         // Display rows and values
-        for (int row = 0; row < bookings.length; row++) {
+       System.out.println("=== COMPUTER LAB BOOKINGS ===");
+System.out.println();
+
+for (int row = 0; row < bookings.length; row++) {
 
             System.out.print("WEEK " + (row + 1) + "\t");
 
