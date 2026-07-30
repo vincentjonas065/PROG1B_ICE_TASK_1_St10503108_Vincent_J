@@ -18,12 +18,12 @@ public class ComputerLabReport {
     public static void main(String[] args) {
 
         // One-dimensional array
-        String[] labs = {
-            "PROGRAMMING",
-            "NETWORKING",
-            "MULTIMEDIA"
-        };
-
+       String[] labs = {
+    "PROGRAMMING",
+    "NETWORKING",
+    "MULTIMEDIA",
+    "DATABASE"
+};
         // Two-dimensional array
         int[][] bookings = {
             {32, 18, 24},
