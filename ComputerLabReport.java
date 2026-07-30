@@ -49,10 +49,10 @@ System.out.println();
 for (int row = 0; row < bookings.length; row++) {
 
             System.out.print("WEEK " + (row + 1) + "\t");
-
-            for (int column = 0; column < bookings[row].length; column++) {
-                System.out.print(bookings[row][column] + "\t\t");
-            }
+    for (int column = 0; column < bookings[row].length; column++) {
+        System.out.print("Day " + (column + 1) + ": "
+            + bookings[row][column] + "\t");
+}
 
             System.out.println();
         }
