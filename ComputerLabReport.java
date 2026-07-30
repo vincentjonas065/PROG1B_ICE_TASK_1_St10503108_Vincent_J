@@ -47,15 +47,21 @@ public class ComputerLabReport {
 System.out.println();
 
 for (int row = 0; row < bookings.length; row++) {
+    System.out.println(labs[row]);
 
-            System.out.print("WEEK " + (row + 1) + "\t");
+    int total = 0;
+
     for (int column = 0; column < bookings[row].length; column++) {
         System.out.print("Day " + (column + 1) + ": "
-            + bookings[row][column] + "\t");
-}
+                + bookings[row][column] + "\t");
 
-            System.out.println();
-        }
+        total = total + bookings[row][column];
+    }
+
+    System.out.println();
+    System.out.println("Total bookings: " + total);
+    System.out.println();
+}
 
         System.out.println("-----------------------------------------------");
 
