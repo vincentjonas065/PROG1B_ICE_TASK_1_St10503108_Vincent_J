@@ -4,10 +4,13 @@
 
 package com.mycompany.computerlabreport;
 
-/**
- *
- * @author Student
+/*
+ * ICE TASK
+ * Name       : Vincent Jonas
+ * Student No : ST10503108
+ * Module     : PROG1B
  */
+
 // Computer Lab Booking Report
 public class ComputerLabReport {
     
