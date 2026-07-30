@@ -8,8 +8,8 @@ package com.mycompany.computerlabreport;
  *
  * @author Student
  */
+// Computer Lab Booking Report
 public class ComputerLabReport {
-
     
 
     public static void main(String[] args) {
