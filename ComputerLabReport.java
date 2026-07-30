@@ -58,9 +58,10 @@ for (int row = 0; row < bookings.length; row++) {
         total = total + bookings[row][column];
     }
 
-    System.out.println();
-    System.out.println("Total bookings: " + total);
-    System.out.println();
+   System.out.println();
+System.out.println("Total bookings: " + total);
+System.out.println("-----------------------------------");
+System.out.println();
 }
 
         System.out.println("-----------------------------------------------");
