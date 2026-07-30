@@ -1,7 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.mycompany.computerlabreport;
 
 /*
@@ -13,17 +12,17 @@ package com.mycompany.computerlabreport;
 
 // Computer Lab Booking Report
 public class ComputerLabReport {
-    
 
     public static void main(String[] args) {
 
         // One-dimensional array
-       String[] labs = {
-    "PROGRAMMING",
-    "NETWORKING",
-    "MULTIMEDIA",
-    "DATABASE"
-};
+        String[] labs = {
+            "PROGRAMMING",
+            "NETWORKING",
+            "MULTIMEDIA",
+            "DATABASE"
+        };
+
         // Two-dimensional array
         int[][] bookings = {
             {32, 18, 24},
@@ -37,42 +36,43 @@ public class ComputerLabReport {
         System.out.println("-----------------------------------------------");
 
         // Display column headings
-        System.out.print("WEEK\t");
+        System.out.print("WEEK\\t");
 
         for (int column = 0; column < labs.length; column++) {
-            System.out.print(labs[column] + "\t");
+            System.out.print(labs[column] + "\\t");
         }
 
         System.out.println();
 
         // Display rows and values
-       System.out.println("=== COMPUTER LAB BOOKINGS ===");
-System.out.println();
+        System.out.println("=== COMPUTER LAB BOOKINGS ===");
+        System.out.println();
 
-for (int row = 0; row < bookings.length; row++) {
-    System.out.println(labs[row]);
+        for (int row = 0; row < bookings.length; row++) {
 
-    int total = 0;
+            System.out.println(labs[row]);
 
-    for (int column = 0; column < bookings[row].length; column++) {
-        System.out.print("Day " + (column + 1) + ": "
-                + bookings[row][column] + "\t");
+            int total = 0;
 
-        total = total + bookings[row][column];
-    }
+            for (int column = 0; column < bookings[row].length; column++) {
+                System.out.print("Day " + (column + 1) + ": "
+                        + bookings[row][column] + "\\t");
 
-   System.out.println();
-System.out.println("Total bookings: " + total);
-System.out.println("-----------------------------------");
-System.out.println();
-}
+                total = total + bookings[row][column];
+            }
+
+            System.out.println();
+            System.out.println("Total bookings: " + total);
+            System.out.println("-----------------------------------");
+            System.out.println();
+        }
 
         System.out.println("-----------------------------------------------");
 
         // Calculate and display totals
-        System.out.print("TOTAL\t");
+        System.out.print("TOTAL\\t");
 
-        for (int column = 0; column < labs.length; column++) {
+        for (int column = 0; column < bookings[0].length; column++) {
 
             int total = 0;
 
@@ -80,15 +80,15 @@ System.out.println();
                 total = total + bookings[row][column];
             }
 
-            System.out.print(total + "\t\t");
+            System.out.print(total + "\\t\\t");
         }
 
         System.out.println();
 
         // Calculate and display averages
-        System.out.print("AVERAGE\t");
+        System.out.print("AVERAGE\\t");
 
-        for (int column = 0; column < labs.length; column++) {
+        for (int column = 0; column < bookings[0].length; column++) {
 
             int total = 0;
 
@@ -98,15 +98,15 @@ System.out.println();
 
             double average = (double) total / bookings.length;
 
-            System.out.print(average + "\t");
+            System.out.print(average + "\\t");
         }
 
         System.out.println();
 
         // Display minimum values
-        System.out.print("MINIMUM\t");
+        System.out.print("MINIMUM\\t");
 
-        for (int column = 0; column < labs.length; column++) {
+        for (int column = 0; column < bookings[0].length; column++) {
 
             int smallest = bookings[0][column];
 
@@ -117,15 +117,15 @@ System.out.println();
                 }
             }
 
-            System.out.print(smallest + "\t\t");
+            System.out.print(smallest + "\\t\\t");
         }
 
         System.out.println();
 
         // Display maximum values
-        System.out.print("MAXIMUM\t");
+        System.out.print("MAXIMUM\\t");
 
-        for (int column = 0; column < labs.length; column++) {
+        for (int column = 0; column < bookings[0].length; column++) {
 
             int largest = bookings[0][column];
 
@@ -136,10 +136,11 @@ System.out.println();
                 }
             }
 
-            System.out.print(largest + "\t\t");
+            System.out.print(largest + "\\t\\t");
         }
 
         System.out.println();
         System.out.println("-----------------------------------------------");
+        System.out.println("Report completed successfully.");
     }
 }
